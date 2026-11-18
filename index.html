@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ASAANIDE — Universal Language Studio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand"><img src="../Asaanlogo.png" alt="ASAAN logo"><div><b>ASAANIDE</b><small>UNIVERSAL LANGUAGE STUDIO</small></div></div>
+      <div class="top-actions"><span class="status"><i></i> Runtime ready</span><button id="themeBtn" class="ghost">◐</button><button id="runBtn" class="run">▶ Run</button><button id="compileBtn" class="outline">Compile</button></div>
+    </header>
+    <div class="workspace">
+      <aside class="sidebar">
+        <div class="side-heading">EXPLORER <button id="newFile">＋</button></div>
+        <div class="file active" id="fileName">▸ hello.asa</div>
+        <div class="side-heading tools-heading">TOOLBOX</div>
+        <button class="tool" data-insert='print: "Hello ASAAN"'>＋ print statement</button>
+        <button class="tool" data-insert="var.name/str = &quot;ASAAN&quot;">＋ string variable</button>
+        <button class="tool" data-insert="calc.calculate | 2 + 2">＋ calculation</button>
+        <div class="side-note">ASAAN v0.1<br>Prototype runtime</div>
+      </aside>
+      <main class="main">
+        <div class="tabbar"><span class="tab">◈ &nbsp; hello.asa</span><span class="language">ASAAN</span></div>
+        <div class="editor-wrap"><div class="gutter" id="gutter">1</div><textarea id="editor" spellcheck="false" autocapitalize="off" autocomplete="off"></textarea></div>
+        <section class="terminal">
+          <div class="terminal-head"><div><b>TERMINAL</b><span>OUTPUT</span></div><button id="clearBtn" class="ghost">Clear</button></div>
+          <pre id="output">ASAANIDE terminal — ready.
+Click Run to execute the current ASAAN program.</pre>
+        </section>
+        <footer><span>ASAAN v0.1.0</span><span id="cursor">Ln 1, Col 1</span><span>UTF-8</span><span>Prototype interpreter</span></footer>
+      </main>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

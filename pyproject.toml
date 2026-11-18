@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "asaanide"
+version = "0.1.0"
+description = "Prototype IDE, interpreter and transpiler for the ASAAN language"
+requires-python = ">=3.10"
+authors = [{name = "ASAANIDE contributors"}]
+license = {text = "MIT"}
+
+[project.scripts]
+asaan = "asaan.__main__:main"
+
+[tool.setuptools]
+packages = ["asaan"]

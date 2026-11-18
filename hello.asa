@@ -1,0 +1,11 @@
+# Hello from ASAAN
+var.name/str = "ASAAN"
+var.times/int = 3
+
+print: "Welcome to " + name
+
+for var.i/int in 1..3:
+    print: "Run " + str(i)
+
+calc.calculate | 6 * (2 + 3)
+print: calculate
